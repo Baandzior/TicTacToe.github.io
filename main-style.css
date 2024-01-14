@@ -1,0 +1,70 @@
+body {
+            font-family: 'Pangolin', cursive;
+            background-color: rgb(104, 170, 137);
+            color: rgb(218, 44, 21);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 70px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .menu-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%
+        }
+
+        .menu-options a{
+            text-decoration: none;
+            font-size: 4vw;
+            color: gold;
+        }
+        
+        .menu div {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .menu img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+        }
+
+        .menu-options a:hover {
+            display: inline-block;
+            animation: wave 0.5s ease-in-out alternate;
+        }
